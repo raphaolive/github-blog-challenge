@@ -1,0 +1,46 @@
+export type User = {
+  avatar_url: string;
+  bio: string;
+  blog: string;
+  company: string;
+  created_at: string;
+  email: string | null;
+  events_url: string;
+  followers: number;
+  followers_url: string;
+  following: number;
+  following_url: string;
+  gists_url: string;
+  gravatar_id: string;
+  hireable: string | null;
+  html_url: string;
+  id: number;
+  location: string;
+  login: string;
+  name: string;
+  node_id: string;
+  organizations_url: string;
+  public_gists: number;
+  public_repos: number;
+  received_events_url: string;
+  repos_url: string;
+  site_admin: boolean;
+  starred_url: string;
+  subscriptions_url: string;
+  twitter_username: string | null;
+  type: string;
+  updated_at: string;
+  url: string;
+};
+
+export type Blog = {
+  id: number;
+  author_association: string;
+  body: string;
+  comments: number;
+  created_at: string;
+  title: string;
+  user: User;
+  number: number;
+  html_url: string;
+};
